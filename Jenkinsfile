@@ -6,11 +6,11 @@ pipeline {
         timestamps()
     }
     stages {
-        stage('Build') {
+        stage('Clean') {
             steps {
                 echo("Building project for ")
                 sleep(time:5,unit:'SECONDS')
-                sh 'mvn build'
+                sh 'mvn clean'
             }
             post {
                 success {
