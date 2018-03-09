@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo("Building project for ${NAME}.")
+                echo("Building project for ")
                 sleep(time:5,unit:'SECONDS')
                 sh 'mvn build'
             }
@@ -23,7 +23,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo("Testing project for ${NAME}.")
+                echo("Testing project for ")
                 sleep(time:5,unit:'SECONDS')
                 sh 'mvn test'
             }
@@ -38,7 +38,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo("Deploying project for ${NAME}.")
+                echo("Deploying project for ")
                 sleep(time:5,unit:'SECONDS')
                 sh 'mvn deploy'
             }
@@ -61,4 +61,3 @@ pipeline {
         }
     }
 }
-
