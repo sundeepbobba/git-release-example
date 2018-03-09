@@ -54,10 +54,10 @@ pipeline {
     }
     post {
         success {
-            echo("Pipeline completed for ${NAME} with result 'SUCCESS'.")
+            echo("Pipeline completed for  with result 'SUCCESS'.")
         }
         failure {
-            echo("Pipeline completed for ${NAME} with result 'FAILURE'.")
+            echo("Pipeline completed for  with result 'FAILURE'.")
         }
     }
 }
