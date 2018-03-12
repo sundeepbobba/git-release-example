@@ -5,9 +5,9 @@
 	<groupId>com.vitormp</groupId>
 	<artifactId>git-release-example</artifactId>
 	<version>0.1.14-SNAPSHOT</version>
-	<packaging>war<packaging>
+	<packaging>war</packaging>
 
-	<name>git-release-example Maven Webapp</name
+	<name>git-release-example Maven Webapp</name>
 
 	<scm>
 		<connection>scm:git:git@github.com:sundeepbobba/git-release-example.git</connection>
@@ -42,6 +42,14 @@
 				<artifactId>maven-release-plugin</artifactId>
 				<version>2.5.3</version>
 			</plugin>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+  				<version>2.3.2</version>
+  				<configuration>
+   				<source>1.7</source>
+	   			<target>1.7</target>
+  				</configuration>
+ 			</plugin>
 		</plugins>
 	</build>
 
