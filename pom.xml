@@ -5,7 +5,7 @@
 	<groupId>com.vitormp</groupId>
 	<artifactId>git-release-example</artifactId>
 	<version>0.1.14-SNAPSHOT</version>
-	<packaging>war<packaging>
+	<packaging>war</packaging>
 
 	<name>git-release-example Maven Webapp</name>
 
